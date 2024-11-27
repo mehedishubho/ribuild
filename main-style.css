@@ -278,13 +278,17 @@ body {
   background: url(assets/image/Obj\ 8.png);
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 50%;
+  /* background-size: 50%; */
 }
 
 .about-us-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.about-image {
+  width: 50%;
 }
 
 .about-image .grid {
@@ -297,18 +301,19 @@ body {
 }
 
 .about-image .box {
-  width: 120px;
-  height: 150px;
+  width: 260px;
+  height: 300px;
   background: #c4c4c4;
-  border-radius: 30px 0px 30px 0px;
+  border-radius: 35px 0px 35px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .play-button {
+  width: 260px;
+  height: 360px;
   background-color: #fff;
-  margin-right: 10px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -336,8 +341,17 @@ body {
   animation: rotate-circle 5s linear infinite;
 }
 
+/* .about-image .rotating-circle span {
+  color: var(--title_color, #15181b);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+} */
+
 .about-text {
-  margin-left: 35px;
+  width: 50%;
 }
 
 .about-text .section-title {
@@ -655,28 +669,45 @@ body {
 
 /* Grid */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  display: flex;
+  gap: 20px;
 }
 
 /* Card */
-.card {
-  width: 195px;
-  height: 295px;
+#project .container .project-demo .grid .card {
+  width: 410px;
+  height: 300px;
   background: #c4c4c4;
-  padding: 1rem;
+  margin-bottom: 15px;
+  /* padding: 30px; */
   text-align: center;
-  border-radius: 8px;
-  position: relative;
+  border-radius: 10px;
+  /* position: relative; */
 }
 
-.card-play {
+#project .container .grid .card-left .card-up {
+  width: 410px;
+  height: 520px;
+}
+
+#project .container .grid .card-left .card-down {
+  width: 410px;
+  height: 420px;
+}
+
+#project .container .grid .card-middle .card-play {
+  width: 410px;
+  height: 430px;
+}
+
+#project .container .project-demo .grid .card-play {
   border-radius: 10px;
   background: rgba(21, 24, 27, 0.7);
+  align-items: center;
+  justify-content: center;
 }
 
-.card .icon {
+#project .container .project-demo .grid .card .icon {
   width: 30px;
   height: 30px;
   background: #ff6600;
@@ -689,21 +720,36 @@ body {
   font-size: 1.5rem;
 }
 
-.card .category {
+#project .container .project-demo .grid .card .category {
   font-size: 0.9rem;
   color: #777;
 }
 
-.card .title {
+#project .container .project-demo .grid .card .title {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
 }
 
-.card:hover {
+#project .container .project-demo .grid .card-middle .card-down {
+  width: 410px;
+  height: 510px;
+}
+
+#project .container .project-demo .grid .card-right .card-up {
+  width: 410px;
+  height: 520px;
+}
+
+#project .container .project-demo .grid .card-right .card-down {
+  width: 410px;
+  height: 420px;
+}
+
+/* #project .container .project-demo .grid .card:hover {
   background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Skills Section */
 .skills-section {
