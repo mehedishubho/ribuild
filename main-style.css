@@ -287,16 +287,6 @@ body {
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
-=======
-/* .about-us .container .about-us-content .about-image {
-  background: url(assets/image/Obj\ 8.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 50%;
-} */
-
->>>>>>> ea0ee23fed918a0f8f1def5f2dae928fddbfbef2
 .about-image .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
