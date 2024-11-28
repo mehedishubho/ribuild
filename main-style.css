@@ -853,7 +853,40 @@ body {
 }
 
 #team-member .container .member-profile-box .profile-box-middhle .social {
-  position: absolute;
+  width: 50px;
+  height: 230px;
+  flex-shrink: 0;
+  border: 1 solid rgba(20, 21, 22, 0.9);
+  /* justify-content: right; */
+}
+
+#team-member .container .member-profile-box .profile-box-middhle .social ul li {
+  list-style: none;
+}
+
+#team-member
+  .container
+  .member-profile-box
+  .profile-box-middhle
+  .social
+  ul
+  li
+  i {
+  width: 45px;
+  height: 45px;
+  color: #2b1a1a;
+}
+
+#team-member
+  .container
+  .member-profile-box
+  .profile-box-middhle
+  .social
+  ul
+  li
+  i
+  a {
+  text-decoration: none;
 }
 
 #team-member .container .member-profile-box .profile-box .profile-info {
@@ -1335,4 +1368,12 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 144.444% */
+}
+
+#footer .bottom-footer .container .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 25px;
 }
