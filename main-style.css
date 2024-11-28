@@ -836,19 +836,63 @@ body {
 
 #team-member .container .member-profile-box {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 #team-member .container .member-profile-box .profile-box {
+  display: flex;
   width: 310px;
   height: 400px;
-  padding: 30px;
+  padding: 15px;
   margin: 15px;
-  gap: 10px;
+  align-items: flex-end;
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid rgba(21, 24, 27, 0.1);
   background: #c4c4c4;
+}
+
+#team-member .container .member-profile-box .profile-box-middhle .social {
+  position: absolute;
+}
+
+#team-member .container .member-profile-box .profile-box .profile-info {
+  width: 280px;
+  height: 90px;
+  align-items: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  background: rgba(90, 98, 103, 0.9);
+}
+
+#team-member
+  .container
+  .member-profile-box
+  .profile-box
+  .profile-info
+  .info
+  h4 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Exo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+}
+
+#team-member .container .member-profile-box .profile-box .profile-info .info p {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
 }
 
 /* Contact Section */
@@ -995,6 +1039,38 @@ body {
 
 .contact-form form button:hover {
   background-color: #e05500;
+}
+
+/* testimonial */
+
+#testimonial .container {
+  background: url(assets/image/RIBUILD.png);
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#testimonial .container .slider-wrp {
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 455px;
+  background: #777;
+  /* display: flex; */
+}
+
+#testimonial .container .slider .slider-item {
+  display: flex;
+  align-items: center;
+}
+
+#testimonial .container .slider .slider-item-inner {
+  width: 624px;
+  height: 364px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 20px 40px 0px rgba;
 }
 
 /* Trade Section */
