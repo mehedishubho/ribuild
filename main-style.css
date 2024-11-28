@@ -229,7 +229,7 @@ body {
   align-items: center;
 }
 
-.slick-prev:before,
+#header .container .slick-prev:before,
 .slick-next:before {
   display: flex;
   width: 40px;
@@ -240,11 +240,11 @@ body {
   border-radius: 2rem;
 }
 
-.slick-prev:before {
+#header .container .slick-prev:before {
   margin-left: -100px;
 }
 
-.slick-next:before {
+#header .container .slick-next:before {
   margin-right: -40px;
 }
 
@@ -1045,6 +1045,7 @@ body {
 
 #testimonial .container {
   background: url(assets/image/RIBUILD.png);
+  background-repeat: no-repeat;
   align-items: center;
   text-align: center;
   margin-top: 30px;
@@ -1053,9 +1054,6 @@ body {
 #testimonial .container .slider-wrp {
   align-items: center;
   justify-content: center;
-  width: 370px;
-  height: 455px;
-  background: #777;
   /* display: flex; */
 }
 
@@ -1064,13 +1062,55 @@ body {
   align-items: center;
 }
 
+#testimonial .container .slider .slider-item .testimonial-box {
+  width: 370px;
+  height: 455px;
+  margin: 10px;
+  background: #777;
+}
+
 #testimonial .container .slider .slider-item-inner {
-  width: 624px;
+  width: 600px;
   height: 364px;
   flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 20px 40px 0px rgba;
+  box-shadow: 0px 20px 40px 0px rgba(21, 24, 27, 0.06);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimonial .container .slider .slider-item-inner .description {
+  width: 450px;
+  color: #6a6a6a;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 175% */
+}
+
+#testimonial .slick-prev:before,
+.slick-next:before {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  background: #f44e19;
+}
+
+#testimonial .slick-prev:before {
+  margin-left: -80px;
+}
+
+#testimonial .slick-next:before {
+  margin-right: -40px;
 }
 
 /* Trade Section */
