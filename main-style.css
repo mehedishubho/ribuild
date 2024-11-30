@@ -1278,18 +1278,50 @@ body {
 #trade .container .image-area .trade-box .trade-box-down .trade-box-icon {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 15px;
 }
 
-.icone1 {
+#trade
+  .container
+  .image-area
+  .trade-box
+  .trade-box-down
+  .trade-box-icon
+  .icone1 {
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
-.icone1 p {
+#trade
+  .container
+  .image-area
+  .trade-box
+  .trade-box-down
+  .trade-box-icon
+  .icone1
+  p {
   margin-left: 10px;
+}
+
+#trade
+  .container
+  .image-area
+  .trade-box
+  .trade-box-down
+  .trade-title-button
+  p:hover {
+  color: var(--main-color, #f44e19);
+}
+
+#trade
+  .container
+  .image-area
+  .trade-box
+  .trade-box-down
+  .trade-title-button
+  a:hover {
+  color: var(--main-color, #f44e19);
 }
 
 #trade .container .image-area .trade-box .trade-box-down .trade-title-button p {
